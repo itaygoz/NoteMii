@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/date_textView_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="date_textView" />
+
+    <TextView
+        android:id="@+id/title_textView_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_textView_note"
+        android:text="note_textView"
+        android:textColor="#000"
+        android:textSize="25dp" />
+
+    <RelativeLayout
+        android:id="@+id/clicked_note_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_textView_note"
+        android:background="#34A7FFEB"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#80000000" />
+
+        <TextView
+            android:id="@+id/note_content_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Content Example"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

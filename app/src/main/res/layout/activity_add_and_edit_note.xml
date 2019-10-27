@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddAndEditNoteActivity">
+
+    <ImageView
+        android:id="@+id/zoom_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:onClick="onZoomImageClick" />
+
+    <TextView
+        android:id="@+id/add_note_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/add_note_title"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:layout_margin="10sp"
+        android:layout_weight="2"/>
+
+    <EditText
+        android:id="@+id/note_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/note_title"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_margin="10sp"
+        android:weightSum="3"
+        android:layout_weight="4">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="@string/content"
+            android:inputType="textMultiLine"
+            android:singleLine="true"
+            android:textAlignment="textStart"
+            android:layout_weight="2"/>
+
+        <ImageButton
+            android:id="@+id/add_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@android:drawable/ic_input_add"
+            android:onClick="onAddImageButtonClick"
+            android:scaleType="fitXY"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="75sp"
+        android:layout_height="100sp"
+        android:layout_margin="10sp"
+        android:onClick="onImageClick"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        android:layout_weight="2"/>
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alarm_option"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/date_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date"
+        android:layout_margin="10sp"
+        android:focusable="false"
+        android:visibility="invisible"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/time_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="time"
+        android:layout_margin="10sp"
+        android:focusable="false"
+        android:visibility="invisible"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_margin="10sp"
+        android:padding="30sp"
+        android:layout_gravity="center"
+        android:onClick="onAddButtonClick"
+        android:layout_weight="1"/>
+
+</LinearLayout>
