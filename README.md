@@ -21,13 +21,13 @@ A step by step series of examples that tell you how to get a development env run
 Say what the step will be:
 
 
-##Set up Android env
+### Set up Android env
 ```
 You have to install Andorid Studio
 
 ```
 
-##Using Thecnologies
+### Using Thecnologies
 ```
 Firebase - Has database, storage and user managment
 RecyclerView
